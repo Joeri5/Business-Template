@@ -35,7 +35,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
             dolorum, veniam est beatae.
           </p>
-          <button><a href="#">see our projects</a></button>
+          <button><a href="#projects">see our projects</a></button>
         </div>
       </div>
       <nav class="navbar" id="navbar">
@@ -46,8 +46,8 @@
         <div class="navbaritems">
           <a class="navbarlink" href="#">Home</a>
           <a class="navbarlink" href="#about">About</a>
-          <a class="navbarlink" href="#">Projects</a>
-          <a class="navbarlink" href="#">Contact</a>
+          <a class="navbarlink" href="#projects">Projects</a>
+          <a class="navbarlink" href="#contact">Contact</a>
         </div>
         <div class="navbarbutton">
           <a href="#">get in touch</a>
@@ -82,9 +82,61 @@
       </div>
     </section>
     <section class="projects" id="projects">
-      <figure>
-        <h1>project card</h1>
-      </figure>
+      <div class="cardwrapper">
+        <div>
+          <h1 id="imagetext">project name</h1>
+          <img src="images/building5.jpeg" alt="" id="image" onmouseover="document.getElementById('imagetext').style.visibility = 'hidden';" onmouseleave="document.getElementById('imagetext').style.visibility = 'visible';" />
+        </div>
+      </div>
+      <!-- make a new javascript function for every card and change the numbers on the id and the getElementById() -->
+      <div class="cardwrapper">
+        <div>
+          <h1 id="imagetext2">project name</h1>
+          <img src="images/building4.jpeg" alt="" id="image" onmouseover="document.getElementById('imagetext2').style.visibility = 'hidden';" onmouseleave="document.getElementById('imagetext2').style.visibility = 'visible';" />
+        </div>
+      </div>
+      <!-- you can change the inline style tag for the text position you can change it by adding style="left: <value>" or style="left: -<value>" -->
+      <div class="cardwrapper">
+        <div>
+          <h1 id="imagetext3">project name</h1>
+          <img src="images/building6.jpeg" alt="" id="image" onmouseover="document.getElementById('imagetext3').style.visibility = 'hidden';" onmouseleave="document.getElementById('imagetext3').style.visibility = 'visible';" />
+        </div>
+      </div>
+      <div class="cardwrapper">
+        <div>
+          <h1 id="imagetext4">project name</h1>
+          <img src="images/building8.jpeg" alt="" id="image" onmouseover="document.getElementById('imagetext4').style.visibility = 'hidden';" onmouseleave="document.getElementById('imagetext4').style.visibility = 'visible';" />
+        </div>
+      </div>
+      <div class="cardwrapper">
+        <div>
+          <h1 id="imagetext5">project name</h1>
+          <img src="images/building9.jpeg" alt="" id="image" onmouseover="document.getElementById('imagetext5').style.visibility = 'hidden';" onmouseleave="document.getElementById('imagetext5').style.visibility = 'visible';" />
+        </div>
+      </div>
+        <!-- make the margin right 125px on the last project card to make the whitespace even on the last card -->
+        <div class="cardwrapper">
+          <div style="margin-right: 125px;">
+            <h1 id="imagetext6">project name</h1>
+            <img src="images/building7.jpeg" alt="" id="image" onmouseover="document.getElementById('imagetext6').style.visibility = 'hidden';" onmouseleave="document.getElementById('imagetext6').style.visibility = 'visible';" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contactheader">
+        <h1>Contact us</h1>
+      </div>
+      <div>
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77979.65162717241!2d4.833920897090342!3d52.35474979531984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1sen!2snl!4v1643937110784!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="contacttext">
+        <a href="">email: example@email.com</a>
+        <a href="">phone: +123456789</a>
+        <a href="">instagram: @expamle</a>
+        <a href="">linkedin: @expamle</a>
+        <a href="">facebook: @exapmle</a>
+      </div>
     </section>
     <script src="main.js"></script>
   </body>

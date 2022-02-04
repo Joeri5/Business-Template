@@ -13,6 +13,7 @@ body {
 }
 
 .navbar {
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
@@ -88,7 +89,7 @@ body {
 .banner > img {
   position: relative;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   object-fit: cover;
   margin-bottom: 100px;
 }
@@ -146,6 +147,7 @@ body {
 }
 
 .about {
+  height: 90vh;
   display: flex;
 }
 
@@ -171,14 +173,97 @@ body {
   text-transform: uppercase;
 }
 
-.projects {
+#projects {
+  margin-top: 250px;
   display: flex;
-  margin-left: 75px;
-  margin-top: 150px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  gap: 50px;
+  overflow-x: auto;
+  width: 100vw;
+  height: 100vh;
 }
 
-.projects > figure {
-  width: 100px;
-  height: 100px;
+.cardwrapper > div {
+  position: relative;
+  margin: 125px 0px 100px 150px;
+  background: black;
+}
+
+.cardwrapper > div > img {
+  display: flex;
+  object-fit: cover;
+  width: 600px;
+  height: 700px;
+  opacity: 50%;
+  transition: 0.8s all;
+}
+
+.cardwrapper > div > img:hover {
+  opacity: 100%;
+}
+
+.cardwrapper > div > h1 {
+  text-transform: uppercase;
+  top: 50%;
+  left: 30%;
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  font-weight: 200;
+  transition: 0.8s all;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 175px;
+}
+
+.contactheader {
+  display: flex;
+  font-family: "Karla", sans-serif;
+  color: black;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contactheader > h1 {
+  display: flex;
+  text-align: center;
+}
+
+.contact > div > iframe {
+  margin-top: 125px;
+  width: 600px;
+  height: 700px;
+}
+
+.contacttext {
+  margin-top: 125px;
+  margin-left: 100px;
+  width: 730px;
+  height: 250px;
   background-color: #a3c3c2;
+  word-break: normal;
+}
+
+.contacttext > a {
+  font-family: "Karla", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  text-transform: uppercase;
+  color: white;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
 }
